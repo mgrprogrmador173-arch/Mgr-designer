@@ -49,7 +49,10 @@
     }
 
     .btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
       background: #111;
       color: #fff;
       padding: 14px 28px;
@@ -57,10 +60,39 @@
       text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     }
 
     .btn:hover {
       background: #b08a3c;
+      color: #111;
+      transform: translateY(-2px);
+    }
+
+    .btn-icon {
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+      border-radius: 50%;
+      background: #b08a3c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.12);
+    }
+
+    .btn:hover .btn-icon {
+      background: #111;
+    }
+
+    .btn-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: #111;
+    }
+
+    .btn:hover .btn-icon svg {
+      fill: #b08a3c;
     }
 
     section {
@@ -253,7 +285,14 @@
       Criação de identidade visual, logotipos, artes para redes sociais,
       vídeos promocionais e materiais visuais para marcas que querem vender mais.
     </p>
-    <a href="https://wa.me/5500000000000" class="btn">Solicitar orçamento</a>
+    <a href="https://wa.me/5551981037961" class="btn" target="_blank">
+      <span class="btn-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19.05 4.94A9.77 9.77 0 0 0 12.1 2C6.67 2 2.24 6.4 2.24 11.84c0 1.74.45 3.43 1.31 4.92L2 22l5.39-1.5a9.92 9.92 0 0 0 4.71 1.2h.01c5.43 0 9.86-4.4 9.86-9.84a9.76 9.76 0 0 0-2.92-6.92ZM12.1 20.03h-.01a8.3 8.3 0 0 1-4.24-1.16l-.3-.18-3.2.89.86-3.12-.2-.32a8.14 8.14 0 0 1-1.27-4.3c0-4.53 3.72-8.22 8.3-8.22a8.2 8.2 0 0 1 5.87 2.45 8.14 8.14 0 0 1 2.43 5.79c0 4.53-3.73 8.22-8.3 8.22Zm4.55-6.16c-.25-.12-1.47-.72-1.7-.8-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.29.18-.54.06-.25-.12-1.05-.38-2.01-1.2-.74-.66-1.25-1.47-1.4-1.72-.15-.24-.02-.37.1-.49.11-.11.25-.29.37-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.76-1.8-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.66.31-.22.24-.86.84-.86 2.04 0 1.2.89 2.36 1.02 2.52.12.16 1.75 2.67 4.23 3.74.59.25 1.05.41 1.41.53.59.18 1.12.16 1.54.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.29Z"/>
+        </svg>
+      </span>
+      <span>Solicitar orçamento</span>
+    </a>
   </header>
 
   <section>
@@ -373,8 +412,15 @@
     </p>
 
     <div class="contact-buttons">
-      <a href="https://wa.me/5500000000000" class="btn">Chamar no WhatsApp</a>
-      <a href="https://instagram.com/seuinstagram" class="btn-outline">Ver Instagram</a>
+      <a href="https://wa.me/5551981037961" class="btn" target="_blank">
+        <span class="btn-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19.05 4.94A9.77 9.77 0 0 0 12.1 2C6.67 2 2.24 6.4 2.24 11.84c0 1.74.45 3.43 1.31 4.92L2 22l5.39-1.5a9.92 9.92 0 0 0 4.71 1.2h.01c5.43 0 9.86-4.4 9.86-9.84a9.76 9.76 0 0 0-2.92-6.92ZM12.1 20.03h-.01a8.3 8.3 0 0 1-4.24-1.16l-.3-.18-3.2.89.86-3.12-.2-.32a8.14 8.14 0 0 1-1.27-4.3c0-4.53 3.72-8.22 8.3-8.22a8.2 8.2 0 0 1 5.87 2.45 8.14 8.14 0 0 1 2.43 5.79c0 4.53-3.73 8.22-8.3 8.22Zm4.55-6.16c-.25-.12-1.47-.72-1.7-.8-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.29.18-.54.06-.25-.12-1.05-.38-2.01-1.2-.74-.66-1.25-1.47-1.4-1.72-.15-.24-.02-.37.1-.49.11-.11.25-.29.37-.43.12-.14.16-.24.24-.4.08-.16.04-.31-.02-.43-.06-.12-.55-1.32-.76-1.8-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.66.31-.22.24-.86.84-.86 2.04 0 1.2.89 2.36 1.02 2.52.12.16 1.75 2.67 4.23 3.74.59.25 1.05.41 1.41.53.59.18 1.12.16 1.54.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.1-.22-.16-.47-.29Z"/>
+          </svg>
+        </span>
+        <span>Chamar no WhatsApp</span>
+      </a>
+      <a href="https://instagram.com/seuinstagram" class="btn-outline" target="_blank">Ver Instagram</a>
     </div>
   </section>
 
