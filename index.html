@@ -229,19 +229,46 @@
     }
 
     .btn-outline {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
       border: 2px solid #111;
       color: #111;
-      padding: 14px 28px;
+      padding: 12px 26px;
       border-radius: 40px;
       text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
     .btn-outline:hover {
       background: #111;
       color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .ml-icon {
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+      border-radius: 50%;
+      background: #b08a3c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 0 0 2px rgba(17,17,17,0.12);
+    }
+
+    .ml-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: #111;
+    }
+
+    .btn-outline:hover .ml-icon {
+      background: #b08a3c;
     }
 
     footer {
@@ -420,7 +447,15 @@
         </span>
         <span>Chamar no WhatsApp</span>
       </a>
-      <a href="https://instagram.com/seuinstagram" class="btn-outline" target="_blank">Ver Instagram</a>
+
+      <a href="https://servico.mercadolivre.com.br/MLB-6673402574-criaco-de-logomarca-video-de-anuncio-profissional-_JM" class="btn-outline" target="_blank">
+        <span class="ml-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4.2c5.15 0 9.35 3.5 9.35 7.8s-4.2 7.8-9.35 7.8S2.65 16.3 2.65 12 6.85 4.2 12 4.2Zm-3.55 7.2c-.44.43-.44 1.13 0 1.56l2.12 2.08c.44.43 1.15.43 1.59 0l.34-.33.33.33c.44.43 1.15.43 1.59 0l2.13-2.08c.43-.43.43-1.13 0-1.56l-.77-.76c-.44-.43-1.15-.43-1.59 0l-1.35 1.32a.49.49 0 0 1-.68 0l-1.35-1.32c-.44-.43-1.15-.43-1.59 0l-.77.76Zm.78.77.77-.76a.03.03 0 0 1 .04 0l1.35 1.32c.61.6 1.59.6 2.2 0l1.35-1.32a.03.03 0 0 1 .04 0l.77.76a.03.03 0 0 1 0 .04l-2.13 2.08a.03.03 0 0 1-.04 0l-.84-.82a.55.55 0 0 0-.77 0l-.84.82a.03.03 0 0 1-.04 0l-2.12-2.08a.03.03 0 0 1 0-.04Z"/>
+          </svg>
+        </span>
+        <span>Ver anúncio no Mercado Livre</span>
+      </a>
     </div>
   </section>
 
