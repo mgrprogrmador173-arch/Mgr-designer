@@ -21,7 +21,7 @@
 
     header {
       background: linear-gradient(135deg, #ffffff, #e9dfcf);
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
 
@@ -107,24 +107,28 @@
     }
 
     .portfolio-item {
-      background: #ddd;
+      background: #fff;
       border-radius: 18px;
       overflow: hidden;
-      min-height: 260px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #777;
-      font-weight: bold;
-      text-align: center;
-      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
     .portfolio-item img {
       width: 100%;
-      height: 100%;
+      height: 330px;
       object-fit: cover;
       display: block;
+    }
+
+    .portfolio-item h3 {
+      padding: 16px 16px 4px;
+      font-size: 18px;
+    }
+
+    .portfolio-item p {
+      padding: 0 16px 18px;
+      color: #666;
+      font-size: 14px;
     }
 
     .packages {
@@ -157,6 +161,13 @@
       font-weight: bold;
       color: #b08a3c;
       margin: 15px 0;
+    }
+
+    .banner-img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+      margin-top: 25px;
     }
 
     .about {
@@ -222,6 +233,10 @@
         font-size: 26px;
       }
 
+      .portfolio-item img {
+        height: 280px;
+      }
+
       .about {
         padding: 30px 20px;
       }
@@ -270,15 +285,46 @@
 
   <section>
     <h2 class="section-title">Portfólio</h2>
-    <p class="section-subtitle">Alguns exemplos de projetos visuais</p>
+    <p class="section-subtitle">Alguns exemplos de projetos criados pela MGR Design Studio</p>
 
     <div class="portfolio">
-      <div class="portfolio-item">Projeto Lunara Skincare</div>
-      <div class="portfolio-item">Identidade Visual Lumina Active</div>
-      <div class="portfolio-item">Vídeo de Anúncio Fitness</div>
-      <div class="portfolio-item">Marketing Visual para Moda</div>
-      <div class="portfolio-item">Embalagens Personalizadas</div>
-      <div class="portfolio-item">Artes Promocionais</div>
+
+      <div class="portfolio-item">
+        <img src="lunara-skincare.jpg" alt="Projeto Lunara Botanical Skincare">
+        <h3>Lunara Skincare</h3>
+        <p>Identidade visual elegante para marca de skincare botânico.</p>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="lunara-produtos.jpg" alt="Embalagem Lunara Skincare">
+        <h3>Lunara Produtos</h3>
+        <p>Aplicação de logomarca em frasco, embalagem e cartão da marca.</p>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="luna-cafe-logo.jpg" alt="Logo Luna Café">
+        <h3>Luna Café</h3>
+        <p>Criação de logomarca para cafeteria com estilo premium.</p>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="luna-cafe-xicara.jpg" alt="Identidade Luna Café">
+        <h3>Luna Café Identidade</h3>
+        <p>Aplicação visual da marca em cenário de cafeteria.</p>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="luna-cafe-embalagem.jpg" alt="Embalagem Luna Café">
+        <h3>Luna Café Embalagem</h3>
+        <p>Design de embalagem, cartão e elementos visuais da marca.</p>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="mgr-divulgacao.jpg" alt="Divulgação MGR Design Studio">
+        <h3>MGR Design Studio</h3>
+        <p>Arte de divulgação para serviços de logomarca e vídeos de anúncio.</p>
+      </div>
+
     </div>
   </section>
 
@@ -305,6 +351,8 @@
         <p>Logomarca + vídeo de anúncio.</p>
       </div>
     </div>
+
+    <img src="pacotes-mgr.jpg" alt="Tabela de pacotes MGR Design Studio" class="banner-img">
   </section>
 
   <section>
